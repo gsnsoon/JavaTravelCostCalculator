@@ -11,9 +11,9 @@ public class MyProgram
         double activityCost = 200.0;
         // Calculations
         double totalHotelCost = hotelcostperday;
-        totalHotelCost *= numDays;
+        totalHotelCost *= numberofdays;
         double totalFoodCost = foodCostPerDay;
-        totalFoodCost *= numDays;
+        totalFoodCost *= numberofdays;
         
         // Adds one at a time, compound assignment
         double totalTripCost = 0.0;
@@ -23,7 +23,7 @@ public class MyProgram
         totalTripCost += activityCost;
  
         // To get decimal
-        double averageCostPerDay = totalTripCost / (double) numDays;
+        double averageCostPerDay = totalTripCost / (double) numberofdays;
  
         // Rounding 
         int roundedTotalCost = (int) totalTripCost;
@@ -34,7 +34,7 @@ public class MyProgram
         System.out.println("========================================");
         System.out.println("Traveler: " + travelerName);
         System.out.println("Destination: " + destination);
-        System.out.println("Duration: " + numDays + " days");
+        System.out.println("Duration: " + numberofdays + " days");
         System.out.println();
  
         System.out.println("--- Breakdown of Expenses ---");
